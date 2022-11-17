@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+*
+{
+    margin: 0%;
+}
+
+/*///////////////////////////////////// HEADERS UP /////////////////////////////*/
+
+.navbar {
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+}
+
+/*-------------------------------*/
+
+.navbar .nav-left {
+    width: 30%;
+}
+
+.navbar .nav-left img {
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 80%;
+}
+
+/*-------------------------------*/
+
+.navbar .nav-right {
+    padding-top: 2%;
+    width: 70%;
+}
+
+nav{
+    width: 70%;
+    background-color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+}
+
+nav ul li{
+    float: left;
+    width: auto;
+    padding-left: 2%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 10%;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #939393;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: #D6D6D6;
+    border-bottom: 2px solid #2EA3F2;
+    transition: 0.8s;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    padding-top: 10%;
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-right: 20%;
+    padding: 5px;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.deroulant > a::after{
+    margin-top:  30px;
+    /*content:" \f107";*/
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+/*////////////////////////////////////// HEADERS DOWN /////////////////////////////////*/
+
+.bottom-box {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    background-color: #313131 ;
+    color: white;
+}
+
+footer ul p a
+{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+.reseaux ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    justify-content:space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+.reseaux ul li{
+    padding-left: 10%;
+}
+
+.lazy {
+    padding-top: 20%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.pub ul {
+    display: flex;
+    color: black;
+    background-color: black;
+    height: 40px;
+    padding-right: 20px;
+    list-style-type: none; 
+}
+
+.pub ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pub {   
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.sm-img {
+    padding-left: 10%;
+}
+
+/*------------------------------------------*/
+
+.glow-on-hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*///////////////////////////////// First Page //////////////////////////////////////*/
+
+.top-flex {
+    display: flex;
+    width: 100%;
+    height: 711.6px;
+    background-color: #336699;
+    font-family: 'Roboto Slab', serif;
+}
+
+.top-flex .left {
+    padding-left: 10%;
+    padding-top: 7%;
+    width: 48%;
+    background-color: #336699;
+    height: 87%;
+}
+
+.top-flex .left h1{
+    height: 50%;
+    font-size: 23px;
+    color: white;
+}
+
+.top-flex .left h2{
+    text-align: center;
+    margin-top: 8%;
+    margin-right: 20%;
+    font-size: 25px;
+    color: white;
+}
+
+.top-flex .right {
+    width: 58%;
+    height: 720px;
+    background-color: #336699;
+}
+
+button {
+    margin-top: 5%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    width: 500px;
+    height: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FF2063;
+    border: none;
+    border-radius: 100px;
+    box-shadow: #5E5DF0 0 10px 20px -15px;
+}
+
+.top-flex .right img {
+    padding-left: 5px;
+    width: 720px;
+}
+
+/*///////////////////////////////// Second Page //////////////////////////////////////*/
+
+.sec-web {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3000px;
+    background-color: #F5F5FB;
+    font-family: 'Roboto Slab', serif;
+}
+
+.sec-web h1 {
+    margin-top: 5%;
+    margin-left: 25%;
+    color: #336699;
+    font-size: 40px;
+}
+
+.sec-web .hunpashun {
+    color: #336699;
+    font-size: 40px;
+    margin-left: 20%;
+    padding-bottom: 115%;
+}
+
+.sec-web .WC {
+    background-color: #F5F5FB;
+    height: 3800px;
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.sec-web .WC .left-stud {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 25%;
+    height: 90%;
+}
+
+.sec-web .WC .mid-stud {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 25%;
+    height: 90%;
+}
+
+.sec-web .WC .right-stud {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 25%;
+    height: 90%;
+}
+
+.sec-web .WC img {
+    padding-top: 10%;
+    padding-left: 35%;
+    width: 100px;
+}
+
+.sec-web .WC h1 {
+    color: #285FA1;
+    font-size: 25px;
+}
+
+.sec-web .WC h2 {
+    color: #285FA1;
+    font-size: 18px;
+}
+
+.sec-web .WC h3 {
+    color: #285FA1;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.sec-web .WC button {
+    margin-top: 5%;
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FFCA4B;
+    border: none;
+    border-radius: 100px;
+    box-shadow: #5E5DF0 0 10px 20px -15px;
+}
+
+.sec-web .third-web {
+    background-color: green;
+    height: 600px;
+    width: 100%;
+}
+
+.sec-web .fourth-web {
+    background-color: yellow;
+    height: 600px;
+    width: 100%;
+}
