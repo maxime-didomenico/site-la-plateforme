@@ -1,176 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="accueil.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
-        <title>Informations - Ecole Informatique</title>
-    </head>
-    <body>
-        <div class="box">
-            <div class="navbar">
-                <div class="nav-left">
-                    <img src="assets/logo.png">
-                </div>
-                <div class="nav-right">
-                    <nav>
-                        <ul>
-                        <li class="deroulant"><a href="#">Qui sommes nous ? &ensp;</a>
-                            <ul class="sous">
-                            <li><a href="#">Qui sommes nous ?</a></li>
-                            <li><a href="#">Ils parlent de nous</a></li>
-                            </ul>
-                        </li>
-                        <li class="deroulant"><a href="#">Cursus &ensp;</a>
-                            <ul class="sous">
-                            <li><a href="#">AWS re/Start</a></li>
-                            <li><a href="#">La Plateforme/Start</a></li>
-                            <li><a href="#">Bachelor IT</a></li>
-                            <li><a href="#">Innovation Lab</a></li>
-                            </ul>
-                        </li>
-                        <li class="deroulant"><a href="#">Spécialisations &ensp;</a>
-                            <ul class="sous">
-                            <li><a href="#">Web Coding</a></li>
-                            <li><a href="#">Cyber Sécurité</a></li>
-                            <li><a href="#">Intelligence Artificielle</a></li>
-                            </ul>
-                        </li>
-                        <li class="deroulant"><a href="#">Entreprise &ensp;</a>
-                            <ul class="sous">
-                            <li><a href="#">Recrutez nos talents</a></li>
-                            <li><a href="#">Vous former au numérique</a></li>
-                            <li><a href="#">Accélérez votre innovation</a></li>
-                            <li><a href="#">Accompagnement IA-Data</a></li>
-                            <li><a href="#">L'Atelier : création de vos outils numériques</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">News</a></li>
-                        <li><a class="contact-color" href="#">Contact</a></li>
-                        <li class="deroulant"><a href="#">Français &ensp;</a>
-                            <ul class="sous">
-                            <li><a href="#">Anglais</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+<html lang="fr">
 
-            <div class="top-flex">
-                <div class="left">
-                    <h1>
-                        La Plateforme le campus<br>méditerranéen du numérique !
-                        <br><br>Des parcours frais de scolarité à zéro<br>euros, ouverts à tous les talents, sans<br>conditions de ressources et de<br>diplômes.
-                        <br><br>Un lieu de rencontre entre entreprises<br>et apprenants pour le bénéfice de tous !<br><br>
-                    </h1>
-                    <h2>Le digital c’est maintenant !</h2>
-                    <button onclick="window.location.href = 'https://laplateforme.io/informations/';">LES INSCRIPTIONS SONT<br>OUVERTES</button>
-                </div>
-                <div class="right">
-                    <img src="assets/lp-pp.jpg.webp"/>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet">
+    <title>La Plateforme</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="accueil.html"><img src="https://laplateforme.io/wp-content/uploads/2021/07/logo_laplateforme_bleu3.png"></a>
             </div>
-            <div class="sec-web">
-                <h1>Se former aux métiers du numérique</h1>
-                <div class="WC">
-                    <div class="left-stud">
-                        <img src="assets/coding.webp"/>
-                        <h1>Web Coding<br><br></h1>
-                        <h2>Développeur Web et Web Mobile</h2>
-                        <h3>RNCP niveau 5 (BAC+2)</h3>
-                        <h2>Concepteur Développeur d’application</h2>
-                        <h3>RNCP niveau 6 (BAC+3)<br><br></h3>
-                        <h3>Quel que soit votre âge, formez-vous gratuitement en 1 ou 2 ans aux métiers du développement web / mobile, grâce à un modèle pédagogique unique qui s’adapte aux besoins de chacun. Donnez vous la chance de faire du numérique votre avenir.</h3>
-                        <button onclick="window.location.href = 'https://laplateforme.io/coding-school/';">DÉCOUVRIR LA CODING SCHOOL</button>
-                    </div>
-                    <div class="mid-stud">
-                        <img src="assets/IA.webp"/>
-                        <h1>Intelligence Artificielle IA<br><br></h1>
-                        <h2>Développeur IA</h2>
-                        <h3>Bachelor (BAC+3)</h3>
-                        <h2>Chef de projet IA</h2>
-                        <h3>MSc (BAC+5)<br><br></h3>
-                        <h3>Passionné de data, mordu d’algo ? Rejoignez l’école de l’Intelligence Artificielle qui propose deux cursus de haut niveau destinés à former de futurs experts en IA et data. La Plateforme_ propose également en partenariat avec l’école Centrale de Marseille, un Post Graduate en Intelligence Artificielle.</h3>
-                        <button onclick="window.location.href = 'https://laplateforme.io/ai-school/';">DÉCOUVRIR L'AI SCHOOL</button>
-                    </div>
-                    <div class="right-stud">
-                        <img src="assets/WC.webp"/>
-                        <h1>Cyber Security<br><br></h1>
-                        <h2>Développeur Sécurité</h2>
-                        <h3>Bachelor (BAC+3)</h3>
-                        <h2>Administrateur Sécurité</h2>
-                        <h3>Bachelor (BAC+3)</h3>
-                        <h2>Responsable de la Protection des Données (DPO)</h2>
-                        <h3>MSc (BAC+5)<br><br></h3>
-                        <h3>La sécurité informatique vous passionne ? Découvrez nos 3 programmes de formation pour devenir un expert de la Sécurité des Systèmes d’Information.</h3>
-                        <button onclick="window.location.href = 'https://laplateforme.io/cyber-security-school/';">DÉCOUVRIR LA CYBER SECURITY SCHOOL</button>
-                    </div>
-                </div>
-                <h1 class="hunpashun">Accélérez votre transformation numérique</h1>
-                <div class="third-web">a</div>
-                <div class="fourth-web">a</div>
+            <div class="nav-right">
+                <nav>
+                    <ul>
+                    <li class="deroulant"><a href="#">Qui sommes nous ? &ensp;</a>
+                        <ul class="sous">
+                        <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                        <li><a href="#">Ils parlent de nous</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><a href="#">Cursus &ensp;</a>
+                        <ul class="sous">
+                        <li><a href="#">AWS re/Start</a></li>
+                        <li><a href="#">La Plateforme/Start</a></li>
+                        <li><a href="#">Bachelor IT</a></li>
+                        <li><a href="#">Innovation Lab</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><a href="#">Spécialisations &ensp;</a>
+                        <ul class="sous">
+                        <li><a href="#">Web Coding</a></li>
+                        <li><a href="#">Cyber Sécurité</a></li>
+                        <li><a href="#">Intelligence Artificielle</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant"><a href="#">Entreprise &ensp;</a>
+                        <ul class="sous">
+                        <li><a href="#">Recrutez nos talents</a></li>
+                        <li><a href="#">Vous former au numérique</a></li>
+                        <li><a href="#">Accélérez votre innovation</a></li>
+                        <li><a href="#">Accompagnement IA-Data</a></li>
+                        <li><a href="#">L'Atelier : création de vos outils numériques</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">News</a></li>
+                    <li><a style="color: #6CBEF5" href="#">Contact</a></li>
+                    <li class="deroulant"><a href="#">Français &ensp;</a>
+                        <ul class="sous">
+                        <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="top-flex">
+            <div class="left">
+                <h1>
+                    La Plateforme le campus<br>méditerranéen du numérique !
+                    <br><br>Des parcours frais de scolarité à zéro<br>euros, ouverts à tous les talents, sans<br>conditions de ressources et de<br>diplômes.
+                    <br><br>Un lieu de rencontre entre entreprises<br>et apprenants pour le bénéfice de tous !<br><br>
+                </h1>
+                <h2>Le digital c’est maintenant !</h2>
+                <button onclick="window.location.href = 'https://laplateforme.io/informations/';">LES INSCRIPTIONS SONT<br>OUVERTES</button>
+            </div>
+            <div class="right">
+                <img src="assets/lp-pp.jpg.webp"/>
             </div>
         </div>
-
-            <div class="bottom-box">
-                <footer>
-                    <section>
-                    <img src="assets/Logo_LaPLateforme_footer.svg" class="lazy" ; />
-                    <div class="reseaux">
-                        <ul>
-                        <li><a href="https://www.facebook.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-facebook.svg" alt="" width="30" height="30"></a></li>
-                        <li><a href="https://www.instagram.com/LaPlateformeIO/" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-instagram.svg" alt="" width="30" height="30"></a></li>
-                        <li><a href="https://www.linkedin.com/school/laplateformeio/" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-linkedin.svg" alt="" width="30" height="30"></a></li>
-                        <li><a href="https://twitter.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-twitter.svg" alt="" width="30" height="30"></a></li>
-                        </ul>
-                    </div>
-                    </section>
-            
-                    <ul>
-                    <h3>La Plateforme</h3> <br>
-                    <p><a href="#">Accueil</a></p>
-                    <p><a href="#">Qui sommes-nous ?</p>
-                    <p><a href="#">Nos brochure</a></p>
-                    <p><a href="#">Ils parlent de nous</a></p>
-                    <p><a href="#">Annuaire des Plateformeurs</a></p>
-                    <p><a href="#">Alumni des Plateformeurs</a></p>
-                    <p><a href="#">Taxe d'apprentissage</a></p>
-                    </ul>
-            
-                    <ul>
-                    <h3>Les Formations</h3> <br>
-                    <p><a href="#">La Plateforme/Start</a></p>
-                    <p><a href="#">Coding School</a></p>
-                    <p><a href="#">Bachelor IT</a></p>
-                    <p><a href="#">Artificial Intelpgence School</a></p>
-                    <p><a href="#">Cyber Security School</a></p>
-                    </ul>
-            
-                    <ul>
-                    <h3>Informations</h3><br>
-                    <p>8 rue d’hozier, 13002 Marseille</p>
-                    <p>Tel : 04.84.89.43.69</p> <br>
-                    <button class="glow-on-hover" 
-                        type="button"><a href="/information/" target="_blank">Contact</a>
-                    </button> <br> <br> <br>
-                    <img src="assets/Logo_April.svg" class="img5">
-                    </ul> 
-                </footer>
-                <div class="pub">
-                    <p>© La Plateforme. Tous droits réservés. | Mentions légales | Cookies | Référent handicap : Jessica Soriano</p>
-                    <ul>
-                    <li><a href="https://www.facebook.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57633 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-facebook.svg" alt="" width="22" height="22"></a></li>
-                    <li><a href="https://www.instagram.com/LaPlateformeIO/" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57634 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-instagram.svg" alt="" width="22" height="22"></a></li>
-                    <li><a href="https://www.linkedin.com/school/laplateformeio/" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57635 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-linkedin.svg" alt="" width="22" height="22"></a></li>
-                    <li><a href="https://twitter.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57636 alignnone size-full" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-twitter.svg" alt="" width="22" height="22"></a></li>
-                    </ul></div>
-                </div>
-                    
-                </div>
+    <div class="second">
+        <h1>Se former aux métiers du numérique</h1>
+        <div class="forms">
+            <div class="vig">
+                <img loading="eager" width="150" height="150"
+                    src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?resize=512%2C512&amp;ssl=1"
+                    alt=""
+                    class="et-waypoint et_pb_animation_top wp-image-53283 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                    data-recalc-dims="1"
+                    srcset="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?w=512&amp;ssl=1 512w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/05/coding.png?resize=480%2C480&amp;ssl=1 480w"
+                    data-lazy-loaded="1" sizes="(max-width: 512px) 100vw, 512px">
+                <h3>Web Coding</h3>
+                <p><span>Développeur Web et Web Mobile</span>, RNCP niveau 5 (BAC+2)</p>
+                <p><span>Concepteur Développeur d’application</span>, RNCP niveau 6 (BAC+3)</p>
+                <p>Quel que soit votre âge, formez-vous gratuitement en 1 ou 2 ans aux métiers du développement web /
+                    mobile,
+                    grâce à un modèle pédagogique unique qui s’adapte aux besoins de chacun. Donnez vous la chance de
+                    faire
+                    du
+                    numérique votre avenir.</p>
+                <a href="">Découvrir la coding school</a>
+            </div>
+            <div class="vig">
+                <img loading="eager" width="150" height="150"
+                    src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2019/03/AMPOULE_BLEU-150x150.png?resize=150%2C150&amp;ssl=1"
+                    alt=""
+                    class="et-waypoint et_pb_animation_top wp-image-48163 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                    data-recalc-dims="1" data-lazy-loaded="1">
+                <h3>Intelligence Artificielle IA</h3>
+                <p><span>Développeur IA</span>, Bachelor (BAC+3)</p>
+                <p><span>Chef de projet IA</span>, MSc (BAC+5)</p>
+                <p><span>Post Graduate CentraleDigitaleLAB</span>, postgraduate (BAC+6)</p>
+                <p>Passionné de data, mordu d’algo ? Rejoignez l’école de l’Intelligence Artificielle qui propose deux
+                    cursus de haut niveau destinés à former de futurs experts en IA et data. La Plateforme_ propose
+                    également en partenariat avec l’école Centrale de Marseille, un Post Graduate en Intelligence
+                    Artificielle.</p>
+                <a href="">Découvrir l'ai school</a>
+            </div>
+            <div class="vig">
+                <img loading="eager" width="150" height="150"
+                    src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2019/03/ORDINATEUR_BLEU-150x150.png?resize=150%2C150&amp;ssl=1"
+                    alt=""
+                    class="et-waypoint et_pb_animation_top wp-image-48161 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                    data-recalc-dims="1" data-lazy-loaded="1">
+                <h3>Cyber Securité</h3>
+                <p><span>Développeur Sécurité</span>, Bachelor (BAC+3)</p>
+                <p><span>Administrateur Sécurité</span>, Bachelor (BAC+3)</p>
+                <p><span>Responsable de la Protection des Données (DPO)</span>, MSc (BAC+5)</p>
+                <p>La sécurité informatique vous passionne ? Découvrez nos 3 programmes de formation pour devenir un
+                    expert de la Sécurité des Systèmes d’Information.</p>
+                <a href="">Découvrir la cyber security school</a>
             </div>
         </div>
-    </body>
+        <h1>Accélérez votre transformation numérique</h1>
+    </div>
+    <div class="third">
+        <div class="vig2">
+            <img loading="eager" width="100" height="100"
+                src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/recruitement.png?resize=512%2C512&amp;ssl=1"
+                alt=""
+                class="et-waypoint et_pb_animation_top wp-image-51616 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                data-recalc-dims="1"
+                srcset="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/recruitement.png?w=512&amp;ssl=1 512w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/recruitement.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/recruitement.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/recruitement.png?resize=400%2C400&amp;ssl=1 400w"
+                data-lazy-loaded="1" sizes="(max-width: 512px) 100vw, 512px">
+            <div>
+                <h3>Recrutez nos talents du numérique</h3>
+                <p>La Plateforme_, fournisseur de talents du numérique vous aide à renforcer vos équipes techniques via
+                    le
+                    recrutement de nos apprenants en stage, en alternance ou à l’issue de leur formation. Nous vous
+                    accompagnons dans le sourcing des candidats et sur la dimension administrative et financière de
+                    votre
+                    recrutement.</p>
+            </div>
+        </div>
+        <a href="">Découvrir la cyber security school</a>
+
+        <div class="vig2">
+            <img loading="eager" width="100" height="100"
+                src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/training.png?resize=512%2C512&amp;ssl=1"
+                alt=""
+                class="et-waypoint et_pb_animation_top wp-image-51613 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                data-recalc-dims="1"
+                srcset="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/training.png?w=512&amp;ssl=1 512w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/training.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/training.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/training.png?resize=400%2C400&amp;ssl=1 400w"
+                data-lazy-loaded="1" sizes="(max-width: 512px) 100vw, 512px">
+            <div>
+                <h3>Recrutez nos talents du numérique</h3>
+                <p>La Plateforme_, fournisseur de talents du numérique vous aide à renforcer vos équipes techniques
+                    via
+                    le
+                    recrutement de nos apprenants en stage, en alternance ou à l’issue de leur formation. Nous vous
+                    accompagnons dans le sourcing des candidats et sur la dimension administrative et financière de
+                    votre
+                    recrutement.</p>
+            </div>
+        </div>
+        <a href="">Découvrir la cyber security school</a>
+        <div class="vig2">
+            <img loading="eager" width="100" height="100"
+                src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/boost.png?resize=512%2C512&amp;ssl=1"
+                alt=""
+                class="et-waypoint et_pb_animation_top wp-image-51612 jetpack-lazy-image jetpack-lazy-image--handled et-animated"
+                data-recalc-dims="1"
+                srcset="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/boost.png?w=512&amp;ssl=1 512w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/boost.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/boost.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/01/boost.png?resize=400%2C400&amp;ssl=1 400w"
+                data-lazy-loaded="1" sizes="(max-width: 512px) 100vw, 512px">
+            <div>
+                <h3>Des formations pour vos collaborateurs</h3>
+                <p>Le digital transforme la plupart des métiers. Se former tout au long de sa vie n’a jamais été
+                    aussi
+                    indispensable pour évoluer et/ou garantir son employabilité. Découvrez notre catalogue de
+                    formations
+                    continues, courtes et adaptées aux attentes des professionnels pour pouvoir saisir les
+                    opportunités
+                    liées au digital</p>
+            </div>
+        </div>
+        <a href="">Découvrir la cyber security school</a>
+    </div>
+
+    <div class="temoin">
+        <h1>Ils temoingent</h1>
+        <p>Découvrez ce que nos apprenants, les grands acteurs de l’économie de la Métropole Aix Marseille Provence
+            et
+            la French Tech pensent de La Plateforme_</p>
+        <div class="vids">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sDkjt3UTukg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8U4CCAFLqEs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="bottom-box">
+        <footer>
+            <section>
+            <img src="assets/Logo_LaPLateforme_footer.svg" class="lazy" ; />
+            <div class="reseaux">
+                <ul>
+                <li><a href="https://www.facebook.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-facebook.svg" alt="" width="30" height="30"></a></li>
+                <li><a href="https://www.instagram.com/LaPlateformeIO/" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-instagram.svg" alt="" width="30" height="30"></a></li>
+                <li><a href="https://www.linkedin.com/school/laplateformeio/" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-linkedin.svg" alt="" width="30" height="30"></a></li>
+                <li><a href="https://twitter.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="sm-img" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-twitter.svg" alt="" width="30" height="30"></a></li>
+                </ul>
+            </div>
+            </section>
+    
+            <ul>
+            <h3>La Plateforme</h3> <br>
+            <p><a href="#">Accueil</a></p>
+            <p><a href="#">Qui sommes-nous ?</p>
+            <p><a href="#">Nos brochure</a></p>
+            <p><a href="#">Ils parlent de nous</a></p>
+            <p><a href="#">Annuaire des Plateformeurs</a></p>
+            <p><a href="#">Alumni des Plateformeurs</a></p>
+            <p><a href="#">Taxe d'apprentissage</a></p>
+            </ul>
+    
+            <ul>
+            <h3>Les Formations</h3> <br>
+            <p><a href="#">La Plateforme/Start</a></p>
+            <p><a href="#">Coding School</a></p>
+            <p><a href="#">Bachelor IT</a></p>
+            <p><a href="#">Artificial Intelpgence School</a></p>
+            <p><a href="#">Cyber Security School</a></p>
+            </ul>
+    
+            <ul>
+            <h3>Informations</h3><br>
+            <p>8 rue d’hozier, 13002 Marseille</p>
+            <p>Tel : 04.84.89.43.69</p> <br>
+            <button class="glow-on-hover" 
+                type="button"><a href="/information/" target="_blank">Contact</a>
+            </button> <br> <br> <br>
+            <img src="assets/Logo_April.svg" class="img5">
+            </ul> 
+        </footer>
+        <div class="pub">
+            <p>© La Plateforme. Tous droits réservés. | Mentions légales | Cookies | Référent handicap : Jessica Soriano</p>
+            <ul>
+            <li><a href="https://www.facebook.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57633 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-facebook.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="https://www.instagram.com/LaPlateformeIO/" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57634 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-instagram.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="https://www.linkedin.com/school/laplateformeio/" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57635 alignnone size-dpocpsquarethumb" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-linkedin.svg" alt="" width="22" height="22"></a></li>
+            <li><a href="https://twitter.com/LaPlateformeIO" target="_blank" rel="noopener"><img loading="lazy" class="wp-image-57636 alignnone size-full" src="https://laplateforme.io/wp-content/uploads/2022/05/footer-picto-twitter.svg" alt="" width="22" height="22"></a></li>
+            </ul></div>
+        </div>
+            
+        </div>
+    </div>
+</body>
+
 </html>
